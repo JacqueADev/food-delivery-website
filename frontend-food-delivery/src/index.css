@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
 body{
@@ -11,4 +14,10 @@ body{
 a{
   text-decoration: none;
   color: inherit;
+}
+
+/*vai definir o geral do campo app. - vide campo app.jsx*/
+.app{
+  width: 80%;
+  margin: auto;
 }

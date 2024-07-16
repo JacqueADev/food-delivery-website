@@ -348,3 +348,5 @@ export const food_list = [
         category: "Noodles"
     }
 ]
+
+/*arquivo com imagens já setadas para cada campo - arquivo feito anteriormente e reservado na pasta assets*/

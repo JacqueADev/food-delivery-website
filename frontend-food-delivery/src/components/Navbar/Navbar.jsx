@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 
 const Navbar = () => {
-  return <div className="navbar">
+
+    const [menu, setMenu] = useState("home");
+
+  return (
+  <div className="navbar">
     <img src={assets.logo} alt="" className="logo" />
     <ul className="navbar-menu">
-        <li>home</li>
-        <li>menu</li>
-        <li>Aplicativo</li>
-        <li>contato</li>
+        <li onClick={() =>setMenu("home")} className={menu==="home"?"active":""}>Home</li>
+        <li onClick={() =>setMenu("menu")} className={menu==="menu"?"active":""}>Menu</li>
+        <li onClick={() =>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Aplicativo</li>
+        <li onClick={() =>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Contato</li>
     </ul>
     <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
@@ -19,7 +23,8 @@ const Navbar = () => {
         </div>
         <button>Entrar</button>
     </div>
-  </div>;
+  </div>
+  );
 };
 
 export default Navbar;

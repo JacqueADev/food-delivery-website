@@ -1,0 +1,69 @@
+
+/*vai ajustar a navbar como um todo*/
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 150px;
+}
+
+/* personaliza os li*/
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #000000;
+    font-size: 18px;
+}
+
+/*personaliza no "fundo geral" a lupa, cesta e button*/
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid orangered;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.navbar button:hover{
+    background: orangered;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s;
+}
+
+.navbar .active{
+    padding-bottom:  2px;
+    border-bottom: 2px solid orangered;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+/*referente ao pontinho que vai ficar ativo na cesta quando tiver produtos dentro dela*/
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: orangered;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
