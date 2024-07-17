@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./FoodDisplay.css";
 import { StoreContext } from "../../context/StoreContext";
+import FoodItem from "../FoodItem/FoodItem";
 
 /*novo "chefe", tem a função de saber quais alimentos estão disponíveis. Ele acessa as infos em storecontext e pega  as infos necessárias dentro de food_list*/
 const FoodDisplay = ({category}) => {
@@ -10,7 +11,11 @@ const FoodDisplay = ({category}) => {
   return (
     <div className="food-display" id="food-display">
         <h2>Principais pratos perto de você</h2>
-
+        <div className="food-display-list">
+            {food_list.map((item, index) => {
+                return <FoodItem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image} />
+            })}
+        </div>
     </div>
 );
 };
