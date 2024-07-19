@@ -5,7 +5,7 @@ import { assets } from "../../assets/assets";
 const AppDownload = () => {
   return (
     <div className="app-download" id="app-download">
-        <p>Para uma melhor experiência <br /> DelishDash App</p>
+        <p>Para uma experiência diferenciada <br /> DelishDash App</p>
         <div className="app-download-plataforms">
             <img src={assets.play_store} alt="" />
             <img src={assets.app_store} alt="" />
